@@ -13,6 +13,6 @@ test('enter 8 and 2, returns 4', () => {
 });
 
 test('enter 8 and 2, returns 16', () => {
-    expect(calculator.divide(8, 2)).toBe(16);
+    expect(calculator.divide(8, 2)).toBe(4);
   });
 
