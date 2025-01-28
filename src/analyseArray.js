@@ -1,10 +1,10 @@
 export const analyseArray = function(arr){
     let sortedArr = bubbleSort(arr);
-
+    
     return {
-        average: null,
+        average: average(arr),
         min: sortedArr[0],
-        max: null,
+        max: sortedArr[sortedArr.length - 1],
         length: arr.length
     };
 }
@@ -22,3 +22,5 @@ function bubbleSort(arr) {
     }
     return arr;
 }
+
+const average = array => array.reduce((a, b) => a + b) / array.length;
