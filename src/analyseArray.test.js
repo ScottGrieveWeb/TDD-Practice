@@ -1,10 +1,10 @@
-import { analyseArray } from "./analyseArray";
+import { analyseArray } from "./analyseArray.js";
 
-test('enters a numerical array and returns an analysis', () => {
-  expect(analyseArray([1,8,3,4,2,6])).toBe({
-    average: 4,
-    min: 1,
-    max: 8,
-    length: 6
+test('normal number array', () => {
+    expect(analyseArray([1,8,3,4,2,6])).toEqual({
+      average: 4,
+      min: 1,
+      max: 8,
+      length: 6,
+    });
   });
-});
